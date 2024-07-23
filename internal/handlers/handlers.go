@@ -6,9 +6,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/Lexa27/bookings/pkg/config"
-	"github.com/Lexa27/bookings/pkg/models"
-	"github.com/Lexa27/bookings/pkg/render"
+	"github.com/Lexa27/bookings/internal/config"
+	"github.com/Lexa27/bookings/internal/models"
+	"github.com/Lexa27/bookings/internal/render"
 )
 
 // Repo is the repository used by the handlers

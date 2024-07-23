@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/Lexa27/bookings/pkg/config"
-	"github.com/Lexa27/bookings/pkg/handlers"
-	"github.com/Lexa27/bookings/pkg/render"
+	"github.com/Lexa27/bookings/internal/config"
+	"github.com/Lexa27/bookings/internal/handlers"
+	"github.com/Lexa27/bookings/internal/render"
 	"github.com/alexedwards/scs/v2"
 )
 

@@ -3,8 +3,8 @@ package main
 import (
 	"net/http"
 
-	"github.com/Lexa27/bookings/pkg/config"
-	"github.com/Lexa27/bookings/pkg/handlers"
+	"github.com/Lexa27/bookings/internal/config"
+	"github.com/Lexa27/bookings/internal/handlers"
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
 )

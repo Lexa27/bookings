@@ -21,6 +21,9 @@
       .content-wrapper {
         background: white;
       }
+      label {
+        font-weight: bold;
+      }
   </style>
   {{block "css" . }}
 
@@ -72,8 +75,8 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="reservations-new">New Reservations</a></li>
-                <li class="nav-item"> <a class="nav-link" href="reservations-all">All Reservations</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/admin/reservations-new">New Reservations</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/admin/reservations-all">All Reservations</a></li>
               </ul>
             </div>
           </li>

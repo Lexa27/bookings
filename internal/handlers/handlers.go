@@ -216,10 +216,11 @@ func (m *Repository) PostReservation(w http.ResponseWriter, r *http.Request) {
 	`, reservation.StartDate.Format("2006-01-02"), restriction.EndDate.Format("2006-01-02"))
 
 	msg = models.MailData{
-		To:      fmt.Sprintf("%d-owner@email.com", reservation.RoomID),
-		From:    "site-operator@email.com",
-		Subject: "Reservation confirmation",
-		Content: htmlMessage,
+		To:       fmt.Sprintf("%d-owner@email.com", reservation.RoomID),
+		From:     "site-operator@email.com",
+		Subject:  "Reservation confirmation",
+		Content:  htmlMessage,
+		Template: "basic.html",
 	}
 
 	m.App.MailChan <- msg
